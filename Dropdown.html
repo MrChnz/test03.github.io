@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html style=background-color:#FFF7F0>
+<title>Dropdown Menu</title>
+<head>
+<body>
+<ul>
+    <li><a href="#" class="Name">Chris Nathan C. Azarcon</a></li>
+</ul>
+
+
+<div class="dropdown">
+    <button class="drop-btn">Section</button>
+    <div class="dropdown-cntnt">
+    <a href="#">Reid</a>
+    <a href="#">Richter</a>
+    <a href="#">Gutenberg</a>
+    </div> 
+</div>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }   
+    .drop-btn{
+        background-color: #d6fffb;
+        color: black;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: .5rem;
+        cursor: pointer;
+        margin-top: 10px; 
+        overflow: hidden;
+    }
+    ul{
+        list-style: none;
+        background-color: #3284b0;
+        padding: 20px;
+    }
+    .Name{
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+    }
+    .dropdown-cntnt{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-cntnt a{
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-cntnt a:hover{
+        background-color: #97e2ef;
+    }
+    .dropdown:hover .dropdown-cntnt{
+        display: block;
+        position: relative;
+        padding-block: 5px;
+
+    }
+    .dropdown:hover .drop-btn{
+        background-color: #3284b0;
+    }
+</style>
